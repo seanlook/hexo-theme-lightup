@@ -1,0 +1,15 @@
+<div class="alignleft">
+  <% if (config.author){ %>
+  &copy; 2013~<%= new Date().getFullYear() %> <a href="<%- theme.menu.About %>"> <%= config.author %> </a>
+  <% } else { %>
+  &copy; <%= new Date().getFullYear() %> <%= config.title %>
+  <% } %>
+  
+  <% if (theme.cnzz.enable) { %>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_<%- theme.cnzz.siteid %>'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253513173%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+  <% } %>
+	 
+  <br />
+  Powered by <a href="http://hexo.io/">hexo</a> | Theme <a href="https://github.com/seanlook/hexo-theme-lightup">lightup</a>, based on <a href="https://github.com/hexojs/hexo-theme-light">light</a> | Hosted by <a href="https://pages.github.com/">Github Pages</a>
+</div>
+<div class="clearfix"></div>

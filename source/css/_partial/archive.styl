@@ -1,0 +1,48 @@
+.archive-title
+  color color-meta
+  font-weight normal
+  margin-bottom 30px
+  text-shadow 0 0 1px #fff
+  &:before
+    font-family font-icon
+    content '\f073'
+    padding-right 15px
+
+
+
+.archive
+  box-shadow 1px 2px 3px color-border
+  border-bottom 1px solid color-border
+  margin-bottom 50px
+  article
+    box-shadow none
+    .post-content
+      margin-bottom 0
+	  
+	  
+.categories, .tags
+  position relative
+  padding-left 25px
+  margin 5px 0
+  &:before
+    position absolute
+    font 1.1em font-icon
+
+.categories
+  &:before
+    content '\f07b'
+    top 3px
+    left 10px
+
+.tags
+  &:before
+    content '\f02b'
+    top 3px
+    left 10px
+	
+.archive_ls
+  a{color:#999;text-decoration:none; } //对全站有链接的文字颜色样式为color:#333;并立即无下划线text-decoration:none;
+  a:hover
+      color color-link
+      text-decoration none
+      text-shadow none

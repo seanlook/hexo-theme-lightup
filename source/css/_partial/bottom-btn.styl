@@ -1,0 +1,68 @@
+.bottom-btn
+  z-index 2
+  position fixed
+  _position absolute
+  bottom 1%
+  right 1%
+  width 36px;
+
+if gotop
+  .icon-gotop
+    width 36px
+    height 36px
+    cursor pointer
+    border-radius 2px
+    box-shadow 0 1px 3px rgba(0,0,0,.2)
+    margin-bottom 10px
+    text-decoration none
+    background-color #444
+    background-color rgba(0,0,0,0.7)
+    color #fff
+    line-height 36px
+    font-size 30px
+    text-align center
+    display inline-block
+    font-family FontAwesome
+    font-style normal
+    font-weight normal
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+  .icon-gotop
+    &:before
+      content "\f077"
+  .icon-gotop
+    &:active
+      background-color rgba(0,0,0,.75)
+  .icon-gotop
+    &:hover
+      background-color rgba(0,0,0,.75)
+
+if tocaside
+  .icon-toc-toggle
+    width 36px
+    height 26px
+    cursor pointer
+    border-radius 2px
+    box-shadow 0 1px 3px rgba(0,0,0,.2)
+    text-decoration none
+    background-color #444
+    background-color rgba(0,0,0,0.7)
+    color #fff
+    line-height 26px
+    font-size 22px
+    text-align center
+    display inline-block
+    font-family FontAwesome
+    font-style normal
+    font-weight normal
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+  .icon-toc-toggle
+    &:before
+      content "\f00b"
+  .icon-toc-toggle
+    &:active
+      background-color rgba(0,0,0,.75)
+  .icon-toc-toggle
+    &:hover
+      background-color rgba(0,0,0,.75)

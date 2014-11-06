@@ -1,0 +1,27 @@
+<% if (arch_ls != 0){ %>
+  <% if (item.tags && item.tags.length){ %>
+      <%
+      var tags = [];
+      item.tags.forEach(function(tag){
+        tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+      });
+      %>
+      <span class="tags">
+        <%- tags.join(', ') %>
+      </span>
+  <% } %>
+<% } %>
+
+<% if (arch_ls != 1){ %>
+   <% if (item.categories && item.categories.length){ %>
+      <%
+      var cats = [];
+      item.categories.forEach(function(cat){
+        cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+      });
+    %>
+    <span class="categories">
+      <%- cats.join(', ') %>
+    </span>
+  <% } %>
+<% } %>

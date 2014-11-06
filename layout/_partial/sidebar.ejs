@@ -1,0 +1,15 @@
+<% if (is_post() && (page.toc !== false) && theme.toc.aside){ %>
+  <div id="toc" class="toc-aside">
+  <h2 class="toc-title"><%= __('contents') %></h2>
+  <%- toc(page.content) %>
+  </div>
+<% } %>
+<aside id="sidebar" class="alignright" data-swiftype-index='false' <% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+<% if (is_archive()) { %>
+  <%- partial('_widget/archive') %>
+<% } else { %>
+  <% theme.widgets.forEach(function(widget){ %>
+    <%- partial('_widget/' + widget) %>
+  <% }) %>
+<% } %>
+</aside>

@@ -1,0 +1,16 @@
+<div class="bottom-btn">
+<% if (theme.go_top){ %>
+	<a class="icon-gotop" href="javascript:void(0)" title="返回顶部"></a>
+	<%- js('js/gotop') %>
+	<!--
+	<script src="<%- config.root %>js/gotop.js"></script>
+	-->
+<% } %>
+<% if (is_post()&& (page.toc !== false) && theme.toc.aside){ %>
+	<a class="icon-toc-toggle" href="javascript:void(0)" title="文章目录"></a>
+	<%- js('js/toc_aside_toggle.js') %>
+	<!--
+	<script src="<%- config.root %>js/toc_aside_toggle.js"></script>
+	-->
+<% } %>
+</div>
