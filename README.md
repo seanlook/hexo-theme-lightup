@@ -5,6 +5,7 @@ Hexo theme improved on the basis of light
 
 # Light
 
+Improved by Sean Chow
 Default theme for [Hexo].
 
 ## Install
