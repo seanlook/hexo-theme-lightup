@@ -1,28 +1,35 @@
 hexo-theme-lightup
 ==================
 
-Hexo theme improved on the basis of light
+Hexo theme improved on the basis of [light](https://github.com/hexojs/hexo-theme-light).
 
-# Light
+# Lightup
 
-Improved by Sean Chow
-Default theme for [Hexo].
+基于[Hexo](http://hexo.io/)默认主题改进而来，具体效果见我的博客站点[demo](http://www.seanlook.com)。
+
+## Features
+考虑默认google站内搜索大陆地区被墙，
+使用见下方
+
+- 集成多说评论功能，增加最新评论widget
+- 集成百度分享功能
+- 集成swiftype第三方站内搜索，也可以配置使用`wen.lu`
+- 集成cnzz站长统计
+- 修改归档页的显示，加入所属标签和分类
+- 增加返回顶部和文章目录
+- 文章详情页加入上下分页
+- 文章顶部增加评论数显示
+- 加入站点地图（sitemap.xml）和订阅（atom.xml）功能
+- 去除多余不使用的功能，如google_analytics和share（twitter无法访问）
+https://github.com/xiangming/landscape-plus
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `light`.
+执行下面的命令将主题源码下载到您的theme目录，修改站点的`_config.yml`中的`theme`为`lightup`。
+
 
 ```
-git clone https://github.com/hexojs/hexo-theme-light.git themes/light
-```
-
-## Update
-
-Execute the following command to update Light.
-
-```
-cd themes/light
-git pull
+git clone https://github.com/seanlook/hexo-theme-lightup.git themes/lightup
 ```
 
 ## Config
@@ -61,23 +68,13 @@ google_analytics:
 rss:
 ```
 
-- **menu** - Main navigation menu
-- **widget** - Widgets displaying in sidebar
-- **excerpt_link** - "Read More" link text at the bottom of excerpted articles
-- **twitter** - Twitter widget config
-  - **username** - Twitter username
-  - **show_replies** - Enable displaying replies
-  - **tweet_count** - Tweets display in widget
-- **addthis** - Share buttons at the buttom of articles (Powered by [AddThis])
-  - **enable** - Enable share buttons
-  - **pubid** - Profile ID of [AddThis]
-  - **facebook** - Enable Facebook button
-  - **twitter** - Enable Twitter button
-  - **google** - Enable Google+ button
-  - **pinterest** - Enable Pinterest button
-- **fancybox** - Enable [Fancybox]
-- **google_analytics** - Google Analytics ID
-- **rss** - RSS subscription link (change if using Feedburner)
+大部分配置请参考官方light主题，下面是需要注意的地方：
+
+
+- **links** - 友情链接
+- **duoshuo_shortname** - 多说评论id
+- **baidushare** - 是否开启百度分享
+...
 
 ## Features
 
