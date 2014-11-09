@@ -36,6 +36,7 @@
       <% } else { %>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
+        <%- partial('post/date', {class_name: 'article-date', date_format: null, footer: true}) %>
         <%- partial('post/bd_share') %>
       <% } %>
       <div class="clearfix"></div>
@@ -43,18 +44,11 @@
   </div>
 </article>
 
+<!-- 这里的文章分页不同于首页用的pagination.ejs -->
+<%- partial('post/articlenav') %>
 
 <% if (page.comments){ %>
-<!-- 这里的文章分页不同于首页用的pagination.ejs -->
- <nav id="pagination" >
-    <% if (page.prev) { %>
-    <a href="<%- config.root %><%- page.prev.path %>" class="alignleft prev" ><%= __('prev') %></a>
-    <% } %>
-    <% if (page.next) { %>
-    <a href="<%- config.root %><%- page.next.path %>" class="alignright next" ><%= __('next') %></a>
-    <% } %>
-    <div class="clearfix"></div>
-</nav>
+
 
 <section id="comment">
 <!-- 多说评论框 start -->

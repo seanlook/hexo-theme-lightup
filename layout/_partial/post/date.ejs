@@ -1,0 +1,9 @@
+<% if (footer == false) { %>
+<a href="<%- url_for(item.path) %>" class="<%= class_name %>">
+  <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= date(item.date, date_format) %></time>
+</a>
+<% } else if (item.updated!=null && theme.display_updated != false) { %>
+<span style="float: right">
+<%= __('updated') %>:<time datetime="<%= date_xml(item.updated) %>" itemprop="dateModified"><%= date(item.updated, date_format) %></time>
+</span>
+<% } %>

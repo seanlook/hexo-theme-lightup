@@ -40,44 +40,6 @@ article
     @media screen and (max-width: 600px)
       padding-left 20px
 	  
-  .post-content:before
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    height: 20%;
-    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-	
-  .post-content:after
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    height: 20%;
-    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-    right: 10px;
-    left: auto;
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    transform: rotate(2deg);
-
   .gallery
     overflow hidden
     position relative
@@ -167,13 +129,11 @@ article
       margin-top 15px
 
     blockquote
-      border-top 1px solid color-border
-      border-bottom 1px solid color-border
-      font-style italic
-      font-family font-serif
-      font-size 1.2em
-      padding 0 30px 15px
-      text-align center
+      border-left: 4px solid #ddd
+      color: #777
+      padding: 0 15px  8px
+      font-family Helvetica,​arial,​freesans,​clean,​sans-serif,font-serif
+      font-size 12px
       footer
         border-top none
         font-size 0.8em
@@ -190,16 +150,16 @@ article
       font-family font-mono
 
     code
-      background #eee
+      background #f8f8f8
       color #666
       padding 0 5px
       margin 0 2px
       font-size 0.9em
-      border 1px solid color-border
+      border 0.1px solid color-border
       border-radius 3px
 
     pre
-      background #eee
+      background #f8f8f8
       border 1px solid color-border
       margin-top 15px
       overflow auto
@@ -230,12 +190,19 @@ article
       max-width 100%
       height auto
       border none
+      text-align center
+      margin 0 auto
+
+    img, video .nocenter
+      max-width 100%
+      height auto
+      border none
 
     iframe
       border none
 
     .caption
-      display block
+      display none
       margin-top 5px
       color color-meta
       position relative

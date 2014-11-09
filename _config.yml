@@ -5,54 +5,28 @@ menu:
   RSS: /atom.xml
  
 widgets:
-#- search
+# - search  #默认使用下面的swiftype搜索，也可以换做google(wen.lu)搜索，见search.ejs
 - search_swiftype
 - recent_posts
 - category
-- duoshuo_recent_comments
+- duoshuo_recent_comments  
 - tagcloud
 #- links
-#- rss
 
 go_top: true
-#links: 
-#- name: 404 page
-#  link: /404.html
-  
+
 display_updated: true
 
 # 如果在文章的 *.md 中使用 <!-- more -->，那么之后的内容不会在首页显示，而是显示 阅读全文 的链接，显示可以更改
 excerpt_link: Read More
 
-
-addthis:
-  enable: false
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
-  
-twitter:
-  username: seanlook
-  show_replies: false
-  tweet_count: 5
-
 # 百度分享插件，bd_share.ejs > article.ejs
 baidu_share: true
-  
+
 fancybox: true
 
 google_analytics:
 rss: /auto.xml
-
-#comment_provider: facebook
-# Facebook comment
-#facebook:
-#  appid: 123456789012345
-#  comment_count: 5
-#  comment_width: 840
-#  comment_colorscheme: light
   
 # 博客的社交分享，eg: 博客底部的两个图标
 social:
@@ -63,14 +37,13 @@ social:
   segmentfault: http://segmentfault.com/u/seanlook
   google: mailto:seanlook7@gmail.com
   weibo: http://weibo.com/zhouxiaozhxi
-  rss: /atom.xml
-  
-  
+
+# 显示文章目录
 toc:
   article: false   ## show contents in article.
   aside: true     ## show contents in aside.
-# cnzz_analytics: true     # 博客的访问统计，这里使用 CNZZ 的统计
-# google_analytics:
-
-# comment_provider:      # 评论功能，一般使用国内的 多说评论
-
+  
+#站点统计footer.ejs，siteid,在获取统计代码的页面的地址栏上可以看到siteid=xxxx或从代码中提取(一般是一串数字)	
+cnzz_analytics:
+  enable: true
+  siteid: 1253513173
