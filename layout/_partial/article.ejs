@@ -45,11 +45,11 @@
 </article>
 
 <!-- 这里的文章分页不同于首页用的pagination.ejs -->
-<%- partial('post/articlenav') %>
+<% if (! index ){ %>
+  <%- partial('post/articlenav') %>
+<% } %>
 
 <% if (page.comments){ %>
-
-
 <section id="comment">
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="<%= item.slug %>" data-title="<%= item.title %>" data-url="<%= item.permalink %>"></div>

@@ -1,9 +1,13 @@
 <nav id="pagination" >
     <% if (page.prev) { %>
-    <a href="<%- config.root %><%- page.prev.path %>" class="alignleft prev" ><%= __('prev') %>: <%= page.prev.title %></a>
-    <% } %>
-    <% if (page.next) { %>
-    <a href="<%- config.root %><%- page.next.path %>" class="alignright next" ><%= __('next') %>: <%= page.next.title %></a>
+      <a href="<%- config.root %><%- page.prev.path %>" class="alignleft prev titlecut" title="<%= __('prev') %>: <%= page.prev.title %>">
+        <%= page.prev.title %>
+      </a>
+      <% } %>
+      <% if (page.next) { %>
+      <a href="<%- config.root %><%- page.next.path %>" class="alignright  next" title="<%= __('next') %>: <%= page.next.title %>">
+        <span class="titlecut" style="text-align:right"><%= page.next.title %></span>
+      </a>
     <% } %>
     <div class="clearfix"></div>
 </nav>
